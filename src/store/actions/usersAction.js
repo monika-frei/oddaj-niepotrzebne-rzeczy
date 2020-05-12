@@ -1,6 +1,6 @@
 export function fetchUsers() {
     return function(dispatch) {
-        return fetch(`http://localhost:3005/users`)
+        return fetch(`https://db-oddaj-rzeczy.herokuapp.com/users`)
                 .then((resp) => resp.json())
                 .then((json)=> dispatch({type: 'FETCH_USERS_SUCCESS', payload: json}))
                 .catch(error => dispatch({type:'FETCH_USERS_ERROR', error}) )

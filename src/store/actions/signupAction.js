@@ -1,6 +1,6 @@
 export function createUser(data) {
     return function(dispatch) {
-        return fetch("http://localhost:3005/users", {
+        return fetch("https://db-oddaj-rzeczy.herokuapp.com/users", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

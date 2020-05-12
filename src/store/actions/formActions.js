@@ -65,7 +65,7 @@ export const formStepFourInfo = info => ({
 
 export function sendForm(form) {
     return function(dispatch) {
-        return fetch("http://localhost:3005/forms", {
+        return fetch("https://db-oddaj-rzeczy.herokuapp.com/forms", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
