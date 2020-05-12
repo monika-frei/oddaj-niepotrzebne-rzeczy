@@ -1,0 +1,153 @@
+.section__how {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 4.4rem;    
+
+    .decoration__line {
+        width: 150px;
+        height: 25px;
+    }
+
+    h3 {
+        font-size:  1.3rem;
+        font-weight: 400;
+        padding-bottom: 1.3rem;
+        text-align: center;
+    }   
+
+    .section__how__steps {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .step {           
+            width: 150px;
+            height: 130px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .step__img {
+                position: absolute;
+                top:0;
+                width: 40px;
+                height: 40px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-bottom: 20px;
+            }
+
+            .step__img__shirt {                
+                background-image: url('../assets/Icon-1.svg');                
+            }
+
+            .step__img__bag {                
+                background-image: url('../assets/Icon-2.svg');                
+            }
+
+            .step__img__loupe {                
+                background-image: url('../assets/Icon-3.svg');                
+            }
+
+            .step__img__arrow {                
+                background-image: url('../assets/Icon-4.svg');                
+            }
+
+            .step__info {
+                margin-top: 50px;
+                margin-bottom: 0.5rem; 
+                font-size: 1rem;;
+                align-self: center;
+                text-align: center;  
+            }
+            .step__line,
+            .step__more {
+                display: none;
+            }
+        }
+    }
+    .btn__how {
+        margin: 0 auto;
+        display: block;
+        background: none;
+        border: none;
+        margin-top: 40px;
+        padding: 10px;
+        border: 1px solid $color-button-border;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        width: 200px;
+        cursor: pointer;
+    }
+
+  
+}
+
+@media(min-width: $breakpoint-tablet) {
+    .section__how {
+    
+        h3 {
+            font-size:  $font-size-section-how-header;
+        }
+        
+        .decoration__line {
+            width: 250px;
+            height: 35px;
+        }
+       
+    
+        .section__how__steps {
+            width: 60%;
+            justify-content: space-around;
+    
+            .step {           
+                width: 150px;
+                height: 250px;
+    
+                .step__img {
+                    position: relative;
+                    background-size: auto;
+                    width: 80px;
+                    height: 80px;
+                }
+    
+                .step__info {
+                    margin-top: 8px;
+                    margin-bottom: 0.5rem; 
+                    align-self: center;
+                    text-align: center;  
+                }
+                .step__line {
+                    display: block;
+                    width: 50%;
+                    border-bottom: 1px solid $color-how-line;
+                    margin-bottom: 0.5rem;
+                }
+    
+                .step__more {
+                    display: block;
+                    font-size: 16px;
+                    align-self: center;
+                    text-align: center;
+                }
+    
+            }
+        }
+        .btn__how {
+            margin-top: 5rem;
+            margin-top: 70px; 
+            padding: 13px 51px;
+            font-size: 36px;
+            width: 310px;
+        }
+    
+      
+    }
+}

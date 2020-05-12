@@ -1,0 +1,100 @@
+@mixin form-h2-mobile {
+    h2 {
+        color: $color-form-headers;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 20px; 
+    }
+};
+
+@mixin form-h3-mobile {
+    h3 {
+        color: $color-form-headers;
+        font-size: 1.2rem;
+        margin-bottom: 20px; 
+    }
+}
+
+@mixin form-button-mobile {
+    button.btn {
+        width: 120px;
+        height: 50px;
+        padding: 10px 20px;
+        align-self: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        font-weight: 400;
+        border: 1px solid $color-button-border;
+        margin-bottom: 50px; 
+    }
+}
+
+
+@mixin form-buttons-container {
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+}
+
+@mixin form-summary-things-local {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1rem;
+        span {
+            font-weight: 700;
+        }
+}
+
+@mixin form-summary-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+@mixin from-steps-display {
+    display: block;
+    font-weight: 300;
+}
+
+@mixin form-h2-tablet {
+    color: $color-form-headers;
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+}
+
+@mixin form-button-tablet {    
+    width: 180px;
+    height: 80px;
+    align-self: flex-start;
+}
+
+@mixin form-step-flex-col-desktop {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin form-h2-desktop {
+    color: $color-form-headers;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+@mixin form-button-desktop {
+    width: 180px;
+    height: 80px;
+    padding: 10px 20px;
+    margin:0;
+}

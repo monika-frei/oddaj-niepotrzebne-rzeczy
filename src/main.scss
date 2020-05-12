@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Open+Sans:300,400,700&display=swap');
+@import './scss/settings/fonts';
+@import './scss/settings/colors';
+@import './scss/settings/_all';
+@import './scss/_menu';
+@import './scss/header';
+@import './scss/threeColumns';
+@import './scss/how';
+@import './scss/about';
+@import './scss/who';
+@import './scss/_contactForm';
+@import './scss/footer';
+@import './scss/login';
+@import './scss/form';
+
+
+
+body { 
+
+    font-family: $font-base; 
+    font-size: $font-size-base;
+    color: $color-base;
+}

@@ -1,0 +1,730 @@
+@import './settings/mixins';
+
+.form__container {
+    width: 100%;
+    height: 100vh;
+    .form__header__steps {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-around;
+        .step {
+            position: relative;
+            background-color: transparent;
+        }
+        .step::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000;
+            transform: translate(-50%,-50%) rotate(45deg);
+            
+        }
+        .step--active {
+            position: relative;
+            background-color: transparent;
+        }
+        .step--active::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            transform: translate(-50%,-50%) rotate(45deg);
+            background-color: $color-mobile-steps-background;  
+            z-index: -1;
+        }
+    }
+    .form__header {
+            display: none;
+    }
+    .important__info {
+        background-color: $color-form-important;
+        padding: 20px 30px;
+
+        h2 {
+            color: $color-form-headers;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }   
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    @include form-button-mobile;
+    @include form-buttons-container;
+
+    .buttons__summary {
+        .btn__confirm {
+            width: 180px;
+        }
+    }
+
+}
+
+.form__step.form__step--one {
+    display: flex;
+    flex-direction: column;
+
+
+    @include form-h2-mobile;
+    
+    
+    p {
+        display: none;
+    }
+    input[type=checkbox] + label {
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: 300;
+    }
+    
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox] + label::before {
+        content: "";
+        display: inline-block;
+        border: 1px solid $color-base;
+        width: 20px;
+        height: 20px;
+        margin-right: 1rem;
+    }
+    input[type=checkbox]:checked + label::before {
+        background-color: $color-form-checked;
+    }
+}
+.form__step--two {
+    @include form-h2-mobile;
+    @include form-button-mobile;
+    @include form-buttons-container;
+    p {
+        display: none;
+    }
+    select {
+        margin-left: 1rem;
+    }
+}
+
+.form__step--three {
+    @include form-h2-mobile;
+    @include form-h3-mobile;
+    @include form-button-mobile;
+    @include form-buttons-container;
+
+    p {
+        display: none;
+    }
+
+    select {
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
+
+    .who__help {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        input[type=radio] {
+            display: none;
+        }
+        label {
+            margin: 10px;
+            position: relative;
+            align-self: center;
+            background-color: lighten($color-form-radio-button-background, 40%);
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        input[type=radio]:checked + label {
+            border: 2px solid $color-base;
+        }
+        input[type=radio].checked + label {
+            border: 2px solid $color-base;
+        }
+
+    }
+
+    input[type=text] {
+        margin-top: 20px;
+        margin-bottom:20px;
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+
+}
+.form__step--four {
+    @include form-h2-mobile;
+    @include form-h3-mobile;
+    p {
+        display: none;
+    };
+
+    h3 {
+        margin-top: 20px;
+    }
+    .form__user__data {
+        display: flex;
+        flex-direction: column;
+
+        label, input {
+            font-size: 1rem;
+            padding: 5px;
+        }
+    }
+}
+
+.form__summary {
+    padding: 10px 0;
+    h2, h3 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    .things__to__donate {
+        @include form-summary-things-local;
+        
+        .icon__shirt {
+            background-image: url('../assets/Icon-1.svg');
+            @include form-summary-icon;
+        }
+        p {
+            width: 400px;
+        }
+    }
+    .localization {
+        @include form-summary-things-local;
+        .icon__arrow {
+            background-image: url('../assets/Icon-4.svg');
+            @include form-summary-icon;
+        }
+    }
+    .address, .term {
+        p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        span {
+            font-weight: 700;
+        }
+    };
+}
+.form__success {
+    h2 {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .form__container {
+        .form__header__steps {
+            display: none;
+        }
+        .form__header {
+            display: block;
+            width: 100%;
+            padding-bottom: 10rem;
+            padding-left: 50px;
+            padding-right: 50px;
+            .form__header__info {
+                margin: 0 auto;
+                h1 {
+                    padding-top: 200px;
+                    font-size: 2rem;
+                    text-align: center;
+                    font-weight: 400;
+                 }
+    
+                 h2 {
+                     text-align: center;
+                     font-weight: 300;
+                     font-size: 2.2rem;
+                 }
+    
+                 .form__steps {
+                     text-align: center;
+                     display: flex;
+                     justify-content: space-around;
+                     margin-top: 4rem;
+
+                     .step__box {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: relative;
+                         
+                        h3 {
+                            font-size: 1.8rem;
+                            font-weight: 300;
+                            padding-bottom: 10px;
+                        }
+                        p {
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                            width: 60%;
+                        }
+    
+                     }
+                 }
+    
+                 .step__box::before {
+                     content: "";
+                     position: absolute;
+                     top: 100%;
+                     transform: rotate(45deg) translate(-50%,-50%);                 
+                     width: 130px;
+                     height: 130px;
+                     display: block;
+                     border: 1px solid $color-base;
+                 }
+            }
+        }
+        .important__info {
+            padding: 50px;
+    
+            h2 {
+                font-size: 2rem;
+            }
+    
+            p {
+                font-size: 1.2rem;
+            }
+        }    
+    }
+    
+    .form {
+        padding: 50px;
+        .form__step__box {
+            display: none;
+        }
+        .p {
+            font-size: 24px;
+            font-weight: 300;
+            padding-left: 140px;
+        }
+        button.btn {
+            @include form-button-tablet;
+        }
+        button.btn {
+            align-self: flex-start;
+            margin-bottom: 50px;
+        } 
+        .buttons {
+            display: flex;
+            padding-left: 50px;
+            justify-content: center;
+            margin-top: 20px;
+            
+            button.btn {
+                margin-right: 50px;
+            }
+        }
+        .buttons__summary {
+            padding-left: 50px;
+            justify-content: center;
+        }
+
+    }
+    
+    .form__step.form__step--one {
+        padding-left: 100px;
+    
+        h2 {
+            @include form-h2-tablet;  
+        }
+        p {
+            @include from-steps-display; 
+        }
+        label {
+                font-size: 1.3rem;
+                font-weight: 300;            
+            }
+    }
+
+    .form__step--two {
+        padding-left: 50px;    
+        p {
+            @include from-steps-display; 
+        }
+    
+        h2 {
+            @include form-h2-tablet; 
+        }
+        label {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+        select {
+            font-weight: 400;
+        }
+    }
+    
+    .form__step--three {
+   
+        p {
+            @include from-steps-display;
+        }
+    
+        h2 {
+            color: $color-form-headers;
+            margin-top: 70px;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+    
+        select {
+            margin-bottom: 50px;
+            padding: 10px;
+        }
+    
+        h3 {
+            color: $color-form-headers;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+    
+        .who__help {
+            label {
+                margin-right: 25px;
+                margin-bottom: 50px;
+            }
+        }
+        label {
+            font-weight: 300;
+            font-size: 1.3rem;
+        }
+
+        input[type=text] {
+            margin-left: 20px;
+        }
+  
+    }
+    .form__step--four {
+        p {
+            @include from-steps-display;
+        }
+        h2 {
+            color: $color-form-headers;
+            margin-top: 70px;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form__user__data {
+            width: 70%;
+            margin: 0 auto;
+
+            label {
+                font-weight: 300;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .form__summary {
+        h2 {
+            color: $color-form-headers;
+            margin-top: 50px;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        .things__to__donate, .localization {
+            div.icon {
+                width: 60px;
+                height: 60px;
+            }
+           
+        }
+        .localization {
+            p {
+                font-size: 1.1rem;
+                font-weight: 300;
+            }
+        }
+        .things__to__donate {
+            margin-bottom: 1rem;
+            p {
+                font-size: 1.1rem;
+                font-weight: 300;
+            }
+        }
+        .address, .term {
+            p {
+                font-weight: 300;
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+            p.delivery__info {
+                margin-top: 5px;
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .form__container {
+        
+        .form__header__steps {
+            display: none;
+        }
+        .form__header {
+            display: block;
+            width: 100%;
+            padding-bottom: 10rem;
+            position: relative;
+    
+            .form__header__info {
+                margin-left: 50%;
+                margin-right: 20%;
+    
+                h1 {
+                    padding-top: 250px;
+                    font-size: 2rem;
+                    text-align: center;
+                    font-weight: 400;
+                    margin-top: 0;
+                 }
+    
+                 h2 {
+                     text-align: center;
+                     font-weight: 300;
+                     font-size: 2.2rem;
+                 }
+
+                 .form__steps {
+                     .step__box {
+                         margin-left: 50px;
+                         margin-right: 50px;
+                         align-items: center;
+                        h3 {
+                            font-size: 1.8rem;
+                            font-weight: 300;
+                            padding-bottom: 10px;
+                        }
+                        p {
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                            width: 100%;
+                        }
+    
+                     }
+                 }
+    
+                 .step__box::before {
+                     content: "";
+                     position: absolute;
+                     top: 80%;
+                     transform: rotate(45deg) translate(-50%,-50%);                 
+                     width: 130px;
+                     height: 130px;
+                     display: block;
+                     border: 1px solid $color-base;
+                 }
+            }
+        }
+        .form__header::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            z-index:-1;
+            position: absolute;
+            top:0;
+            left: -10vw;
+            background-image: url(../assets/Form-Hero-Image.jpg);
+            background-repeat: no-repeat;
+            opacity: 0.4;
+            
+        }
+        .important__info {
+            background-color: $color-form-important;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            padding-left: 140px;
+    
+            h2 {
+                color: $color-form-headers;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+    
+            p {
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+        }    
+    }
+    
+    .form {
+        height: 800px;
+        background-image: url('../assets/Background-Form.jpg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        .form__step__box {
+            display: none;
+        }
+        .p {
+           font-size: 24px;
+           font-weight: 300;
+           padding-left: 140px;
+        }
+        form {
+            height: 600px;
+        }
+        button.btn {
+            @include form-button-desktop;
+        } 
+        .buttons {
+            display: flex;
+            padding-left: 100px;
+            justify-content: flex-start;
+            margin-top: 20px;
+            
+            button.btn {
+                margin-right: 50px;
+            }
+        }
+        .buttons__summary {
+            padding-left: 50px;
+            justify-content: center;
+        }
+
+    }
+    
+    .form__step.form__step--one {
+
+        @include form-step-flex-col-desktop;
+        padding-left: 100px;
+    
+        h2 {
+            @include form-h2-desktop;
+        }
+
+        label {
+                font-size: 1.5rem;
+                font-weight: 300;            
+            }
+        
+    }
+    .form__step--two {
+        padding-left: 100px;
+    
+        h2 {
+            @include form-h2-desktop;
+        }
+        label {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .form__step--three {
+        padding-left: 100px;
+    
+        p {
+            margin-bottom: 70px;
+            font-weight: 300;
+        }
+    
+        h2 {
+            color: $color-form-headers;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+    
+        select {
+            margin-bottom: 50px;
+        }
+    
+        h3 {
+            color: $color-form-headers;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+    
+        .who__help {
+            label {
+                margin-right: 25px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .form__step--four {
+        padding-left: 100px;
+        .form__user__data__container {
+            display: flex;
+        }
+        .form__user__data {
+            margin: 0;
+            margin-right: 100px;
+            width: 20%;
+        }
+    
+        p {
+            margin-bottom: 70px;
+            font-weight: 300;
+        }
+    
+        h2 {
+            color: $color-form-headers;
+            text-align: left;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        input,select {
+            margin-bottom: 10px;
+        }
+        #info {
+            height: 110px;
+        }
+    }
+    .form__summary {
+        h2 {
+            text-align: left;
+        }
+    }
+    .form__success {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            width: 40%;
+        }
+    }
+    
+}

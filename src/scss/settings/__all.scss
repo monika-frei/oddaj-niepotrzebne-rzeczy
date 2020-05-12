@@ -1,0 +1,29 @@
+$breakpoint-desktop: 1024px;
+$breakpoint-tablet: 768px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: $color-base;
+}
+
+.decoration__line {
+
+        width: 250px;
+        height: 35px;
+        background-image: url('../../assets/Decoration.svg');
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+}
+

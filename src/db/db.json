@@ -1,0 +1,280 @@
+{
+  "foundations": [
+    {
+      "name": "foundations",
+      "desc": "jakis opis",
+      "items": [
+        {
+          "header": "Fundacja “Dbam o Zdrowie”",
+          "subheader": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+          "desc": "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
+          "id": 1
+        },
+        {
+          "header": "Fundacja “Dla dzieci”",
+          "subheader": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+          "desc": "ubrania, meble, zabawki",
+          "id": 2
+        },
+        {
+          "header": "Fundacja “Bez domu”",
+          "subheader": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+          "desc": "ubrania, jedzenie, ciepłe koce",
+          "id": 3
+        },
+        {
+          "header": "Fundacja “Dla ludzi starszych”",
+          "subheader": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+          "desc": "ubrania, jedzenie, ciepłe koce",
+          "id": 4
+        },
+        {
+          "header": "Fundacja “Dla zwierząt”",
+          "subheader": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+          "desc": "ubrania, jedzenie, ciepłe koce",
+          "id": 5
+        }
+      ]
+    },
+    {
+      "name": "organizations",
+      "desc": "jakis opis",
+      "items": [
+        {
+          "header": "Organizacja “Lorem Ipsum 1”",
+          "subheader": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+          "desc": "Mi, quis, hendrerit, dolor",
+          "id": 1
+        },
+        {
+          "header": "Organizacja “Lorem Ipsum 2”",
+          "subheader": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+          "desc": "Mi, quis, hendrerit, dolor",
+          "id": 2
+        },
+        {
+          "header": "Organizacja “Lorem Ipsum 3”",
+          "subheader": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+          "desc": "Mi, quis, hendrerit, dolor",
+          "id": 3
+        },
+        {
+          "header": "Organizacja “Lorem Ipsum 4”",
+          "subheader": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+          "desc": "Mi, quis, hendrerit, dolor",
+          "id": 4
+        },
+        {
+          "header": "Organizacja “Lorem Ipsum 5”",
+          "subheader": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+          "desc": "Mi, quis, hendrerit, dolor",
+          "id": 5
+        },
+        {
+          "header": "Organizacja “Lorem Ipsum 6”",
+          "subheader": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+          "desc": "Mi, quis, hendrerit, dolor",
+          "id": 6
+        }
+      ]
+    },
+    {
+      "name": "locals",
+      "desc": "jakis opis",
+      "items": [
+        {
+          "header": "Zbiórka “Lorem Ipsum 1”",
+          "subheader": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+          "desc": "Mi, quis, hendrerit, dolor"
+        },
+        {
+          "header": "Zbiórka “Lorem Ipsum 2”",
+          "subheader": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+          "desc": "Mi, quis, hendrerit, dolor"
+        },
+        {
+          "header": "Zbiórka “Lorem Ipsum 3”",
+          "subheader": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+          "desc": "Mi, quis, hendrerit, dolor"
+        },
+        {
+          "header": "Zbiórka “Lorem Ipsum 4”",
+          "subheader": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+          "desc": "Mi, quis, hendrerit, dolor"
+        },
+        {
+          "header": "Zbiórka “Lorem Ipsum 5”",
+          "subheader": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+          "desc": "Mi, quis, hendrerit, dolor"
+        },
+        {
+          "header": "Zbiórka “Lorem Ipsum 6”",
+          "subheader": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+          "desc": "Mi, quis, hendrerit, dolor"
+        },
+        {
+          "header": "Zbiórka “Lorem Ipsum 7”",
+          "subheader": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+          "desc": "Mi, quis, hendrerit, dolor"
+        },
+        {
+          "header": "Zbiórka “Lorem Ipsum 8”",
+          "subheader": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+          "desc": "Mi, quis, hendrerit, dolor"
+        },
+        {
+          "header": "Zbiórka “Lorem Ipsum 9”",
+          "subheader": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+          "desc": "Mi, quis, hendrerit, dolor"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "piotr@gmail.com",
+      "password": "piotrpiotr"
+    },
+    {
+      "id": 2,
+      "email": "marzena@gmail.com",
+      "password": "marzenamarzena"
+    },
+    {
+      "id": 5,
+      "email": "teresa@gmail.com",
+      "password": "qwerty"
+    },
+    {
+      "id": 51,
+      "email": "tomek@gmail.com",
+      "password": "qwerty"
+    },
+    {
+      "id": 74,
+      "email": "frei.monika@gmail.com",
+      "password": "qwerty"
+    },
+    {
+      "id": 37,
+      "email": "monika@gmail.com",
+      "password": "qwerty"
+    }
+  ],
+  "forms": [
+    {
+      "items": [
+        "ubrania, do wyrzucenia",
+        "zabawki"
+      ],
+      "quantity": "2",
+      "toWho": "samotnym matkom",
+      "organization": "",
+      "where": "Poznań",
+      "userInfo": {
+        "street": "turawska",
+        "city": "opole",
+        "postalCode": "458963",
+        "telNumber": "789456123",
+        "date": "2020-04-14",
+        "time": "10:00",
+        "info": "bla bla bla"
+      },
+      "id": 1
+    },
+    {
+      "items": [],
+      "quantity": "1",
+      "toWho": "niepełnosprawnym",
+      "organization": "",
+      "where": "jakies",
+      "userInfo": {
+        "street": "",
+        "city": "",
+        "postalCode": null,
+        "telNumber": null,
+        "date": "",
+        "time": "",
+        "info": ""
+      },
+      "id": 2
+    },
+    {
+      "items": [
+        "ubrania, które nadają się do ponownego użycia"
+      ],
+      "quantity": "2",
+      "toWho": "dzieciom",
+      "organization": "",
+      "where": "Poznań",
+      "userInfo": {
+        "street": "brzeska",
+        "city": "zabrze",
+        "postalCode": "78955",
+        "telNumber": "7894566123",
+        "date": "2020-04-15",
+        "time": "10:00",
+        "info": "bla bla bla"
+      },
+      "id": 3
+    },
+    {
+      "items": [],
+      "quantity": "1",
+      "toWho": "dzieciom",
+      "organization": "",
+      "where": "jakies",
+      "userInfo": {
+        "street": "",
+        "city": "",
+        "postalCode": null,
+        "telNumber": null,
+        "date": "",
+        "time": "",
+        "info": ""
+      },
+      "id": 4
+    },
+    {
+      "items": [
+        "zabawki",
+        "ubrania, do wyrzucenia",
+        "ubrania, które nadają się do ponownego użycia"
+      ],
+      "quantity": "4",
+      "toWho": "samotnym matkom",
+      "organization": "",
+      "where": "Warszawa",
+      "userInfo": {
+        "street": "brzeska",
+        "city": "brzeg",
+        "postalCode": "458966",
+        "telNumber": "785963456",
+        "date": "2020-04-15",
+        "time": "10:00",
+        "info": "bla bla"
+      },
+      "id": 5
+    },
+    {
+      "items": [
+        "książki"
+      ],
+      "quantity": "3",
+      "toWho": "samotnym matkom",
+      "organization": "",
+      "where": "Kraków",
+      "userInfo": {
+        "street": "turawska",
+        "city": "weocla",
+        "postalCode": "435254",
+        "telNumber": "544767868",
+        "date": "2020-04-29",
+        "time": "12:15",
+        "info": ""
+      },
+      "id": 6
+    }
+  ]
+}
