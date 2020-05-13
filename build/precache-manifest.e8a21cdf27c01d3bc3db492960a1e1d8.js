@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9d06552df21466d863cfb61fc8b99070",
+    "revision": "36c1294a7e76b9a3f1fc36c0908a1098",
     "url": "/oddaj-niepotrzebne-rzeczy/build/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oddaj-niepotrzebne-rzeczy/build/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "f0fd8b0b1e0fce77131c",
+    "revision": "2d96753678a4847a714b",
     "url": "/oddaj-niepotrzebne-rzeczy/build/static/css/main.4e3fd4f2.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oddaj-niepotrzebne-rzeczy/build/static/js/2.6bd5e62d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f0fd8b0b1e0fce77131c",
-    "url": "/oddaj-niepotrzebne-rzeczy/build/static/js/main.949b8678.chunk.js"
+    "revision": "2d96753678a4847a714b",
+    "url": "/oddaj-niepotrzebne-rzeczy/build/static/js/main.9488828a.chunk.js"
   },
   {
     "revision": "02bcd806d7a6cff3ce55",

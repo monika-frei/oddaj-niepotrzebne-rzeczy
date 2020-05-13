@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/oddaj-niepotrzebne-rzeczy/build/static/css/main.4e3fd4f2.chunk.css",
-    "main.js": "/oddaj-niepotrzebne-rzeczy/build/static/js/main.949b8678.chunk.js",
-    "main.js.map": "/oddaj-niepotrzebne-rzeczy/build/static/js/main.949b8678.chunk.js.map",
+    "main.js": "/oddaj-niepotrzebne-rzeczy/build/static/js/main.9488828a.chunk.js",
+    "main.js.map": "/oddaj-niepotrzebne-rzeczy/build/static/js/main.9488828a.chunk.js.map",
     "runtime-main.js": "/oddaj-niepotrzebne-rzeczy/build/static/js/runtime-main.f6e2bb9d.js",
     "runtime-main.js.map": "/oddaj-niepotrzebne-rzeczy/build/static/js/runtime-main.f6e2bb9d.js.map",
     "static/css/2.764ccc25.chunk.css": "/oddaj-niepotrzebne-rzeczy/build/static/css/2.764ccc25.chunk.css",
     "static/js/2.6bd5e62d.chunk.js": "/oddaj-niepotrzebne-rzeczy/build/static/js/2.6bd5e62d.chunk.js",
     "static/js/2.6bd5e62d.chunk.js.map": "/oddaj-niepotrzebne-rzeczy/build/static/js/2.6bd5e62d.chunk.js.map",
     "index.html": "/oddaj-niepotrzebne-rzeczy/build/index.html",
-    "precache-manifest.2fa3e49afb1774959ca34260571bb863.js": "/oddaj-niepotrzebne-rzeczy/build/precache-manifest.2fa3e49afb1774959ca34260571bb863.js",
+    "precache-manifest.e8a21cdf27c01d3bc3db492960a1e1d8.js": "/oddaj-niepotrzebne-rzeczy/build/precache-manifest.e8a21cdf27c01d3bc3db492960a1e1d8.js",
     "service-worker.js": "/oddaj-niepotrzebne-rzeczy/build/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/oddaj-niepotrzebne-rzeczy/build/static/css/2.764ccc25.chunk.css.map",
     "static/css/main.4e3fd4f2.chunk.css.map": "/oddaj-niepotrzebne-rzeczy/build/static/css/main.4e3fd4f2.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.764ccc25.chunk.css",
     "static/js/2.6bd5e62d.chunk.js",
     "static/css/main.4e3fd4f2.chunk.css",
-    "static/js/main.949b8678.chunk.js"
+    "static/js/main.9488828a.chunk.js"
   ]
 }
