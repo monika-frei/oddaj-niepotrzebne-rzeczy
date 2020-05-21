@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import HamburgerMenu from 'react-hamburger-menu'
 import { NavLink } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link'
+import { connect } from 'react-redux'
+import { logOutUser } from '../../store/actions/usersAction'
 
 class MobileMenu extends Component {
 
@@ -32,9 +34,52 @@ class MobileMenu extends Component {
         })
     }
 
+    handleLogOut = () => {
+        this.props.loggedUser()
+    }
+
     render() {
+        let nav
+        if(this.props.user.email === "") {
+             nav = <>
+                <li onClick = {this.handleMenuClose}>
+                    <NavLink 
+                        to = "/nowekonto" 
+                        className ="btn__auth"
+                    >
+                        Załóż konto
+                    </NavLink>
+                </li>
+                <li onClick = {this.handleMenuClose}>
+                    <NavLink 
+                        to = "/zaloguj" 
+                        className ="btn__auth"
+                    >
+                    Zaloguj
+                    </NavLink>
+                </li>                
+             </>
+        } else {
+            nav = <>
+                <li onClick = {this.handleMenuClose}>
+                    <NavLink 
+                        to = "/oddaj-rzeczy" 
+                        className ="btn__auth"
+                    >
+                    Oddaj rzeczy</NavLink>
+                </li>
+                <li onClick = {this.handleMenuClose}>
+                    <NavLink 
+                        to = "/" 
+                        className ="btn__auth"
+                    >
+                        <div onClick = {this.handleLogOut}>Wyloguj</div>
+                    </NavLink>
+                </li>
+             </>
+        }
         return (
-            <section className = "mobile__header">
+            <section className = "mobile__header" id="mobileHeader">
                 <div className = "mobile__menu">
                     <HamburgerMenu 
                         isOpen = {this.state.open}
@@ -44,24 +89,8 @@ class MobileMenu extends Component {
                         animationDuration = {0.2}
                         className = "hamburger"
                     />
-                    <nav className = {this.state.navClass}>
+                    <div className = {this.state.navClass}>
                         <ul>
-                            <li onClick = {this.handleMenuClose}>
-                                <NavLink 
-                                    to = "/zaloguj" 
-                                    className ="btn__auth"
-                                    >
-                                    Zaloguj
-                                </NavLink>
-                            </li>
-                            <li onClick = {this.handleMenuClose}>
-                                <NavLink 
-                                    to = "/nowekonto" 
-                                    className ="btn__auth"
-                                    >
-                                    Załóż konto
-                                </NavLink>
-                            </li>
                             <li onClick = {this.handleMenuClose}>
                                 <Link
                                     activeClass ="active"
@@ -92,8 +121,9 @@ class MobileMenu extends Component {
                                     smooth to = "/#homeContact"
                                 >Kontakt</Link>
                             </li>
+                            { nav }
                         </ul>                        
-                    </nav>
+                    </div>
                 </div>
                     <div className = "mobile__logo"></div>
             </section>
@@ -101,4 +131,16 @@ class MobileMenu extends Component {
     }
 }
 
-export default MobileMenu
+const mapStateToProps = (state) => {
+    return {
+        user: state.loggedUser
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        loggedUser: () => dispatch(logOutUser())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(MobileMenu)

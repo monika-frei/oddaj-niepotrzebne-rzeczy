@@ -6,6 +6,7 @@ import HomeAbout from './home/HomeAbout';
 import HomeWho from './home/HomeWho';
 import HomeContactForm from './home/HomeContactForm';
 import HomeFooter from './home/HomeFooter';
+import MobileScrollBtn from './menu/MobileScrollBtn';
 
 function Home() {
     return (
@@ -17,6 +18,7 @@ function Home() {
             <HomeWho />
             <HomeContactForm />
             <HomeFooter />
+            <MobileScrollBtn /> 
         </main>
     )
 }

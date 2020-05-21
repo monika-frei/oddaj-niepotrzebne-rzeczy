@@ -11,6 +11,7 @@ import { sendForm } from '../store/actions/formActions'
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom'
 import FormButtons from './form/FormButtons'
+import MobileScrollBtn from './menu/MobileScrollBtn';
 
 
 class Form extends Component {
@@ -124,7 +125,8 @@ class Form extends Component {
                         <FormButtons handleButtonNext = {this.handleButtonNext} handleButtonPrev = {this.handleButtonPrev} currentStep = {this.state.currentStep} handleSubmit = {this.handleSubmit} />  
                     </div>
                 <HomeContactForm />
-                <HomeFooter />   
+                <HomeFooter />  
+                <MobileScrollBtn /> 
             </div>
         )
     }

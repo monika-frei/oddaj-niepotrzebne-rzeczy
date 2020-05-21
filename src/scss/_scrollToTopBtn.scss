@@ -1,0 +1,30 @@
+.App {
+    position: relative;
+    .scroll__top__btn {
+        position: fixed;
+        bottom: 20px;
+        right:10px;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        background-color: $color-mobile-scroll-background;
+        border-radius: 50%;
+    }
+
+    .arrow__up {
+        background-image: url('../assets/Icon-Arrow-Up.svg');
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+}
+
+
+
+@media (min-width: $breakpoint-tablet) {
+    .scroll__top__btn {
+        display: none;
+    }
+}

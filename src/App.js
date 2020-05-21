@@ -22,7 +22,7 @@ class App extends Component {
           <Route path = "/nowekonto" component = { SignUp } />
           <Route path = "/oddaj-rzeczy" component = { Form } />
           <Route path = "/wylogowano" component = { LogOut } />
-        </Switch>      
+        </Switch>
       </div>
     </HashRouter>
   )
