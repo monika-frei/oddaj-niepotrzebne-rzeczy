@@ -1,110 +1,102 @@
 .section__header {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 20px;
+
+  .header__main {
+    align-self: flex-start;
     display: flex;
-    justify-content: right;
+    padding-top: 32px;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    padding-bottom: 20px;
+
+    h1 {
+      font-size: 1.3rem;
+      color: $color-header-headers;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    .decoration__line {
+      width: 150px;
+      height: 25px;
+      background-image: url("../assets/Decoration.svg");
+      background-size: cover;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .header__main .buttons .btn {
+    background: none;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid $color-button-border;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 80%;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .section__header {
+    .header__main {
+      padding-top: 200px;
+
+      h1 {
+        font-size: 2rem;
+      }
+      .decoration__line {
+        width: 250px;
+        height: 35px;
+      }
+      .buttons {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    .header__main .buttons .btn {
+      margin-top: 70px;
+      padding: 13px 40px;
+      font-size: 36px;
+      width: 280px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .section__header {
+    height: 100vh;
+    margin-bottom: 100px;
+    background-color: transparent;
+    background-image: url("../assets/Home-Hero-Image.jpg");
+    background-size: contain;
+    background-position: -30vw;
+    background-repeat: no-repeat;
 
     .header__main {
-        align-self: flex-start;
-        display: flex;
-        padding-top: 32px;
-        width: 100vw;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        h1 {
-            font-size: 1.3rem;
-            color: $color-header-headers;
-            text-align: center;
-            font-weight: 400;
-        }
+      padding-top: 300px;
+      padding-left: 200px;
+      width: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 2rem;
 
-        .decoration__line {
-            width: 150px;
-            height: 25px;
-            background-image: url('../assets/Decoration.svg');
-            background-size: cover;
-        }
-        .buttons {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-        }
+      .decoration__line {
+        margin: 0;
+        align-self: center;
+      }
     }
-
-    .header__main .buttons .btn {
-        background: none;
-        border: none;
-        margin-top: 20px; 
-        padding: 10px;
-        border: 1px solid $color-button-border;
-        font-size: 1.5rem;
-        font-weight: 300;
-        text-transform: uppercase;
-        width: 80%;
-        cursor: pointer;
-
-    }
-    
-}
-
-@media(min-width: $breakpoint-tablet) {
-
-    .section__header {
-
-        .header__main {
-            padding-top: 200px;
-
-            h1 {
-                font-size: 2rem;
-            }
-            .decoration__line {
-                width: 250px;
-                height: 35px;
-            }
-            .buttons {
-                flex-direction: row;
-                align-items: center;
-            }
-        }
-        .header__main .buttons .btn {
-            margin-top: 70px; 
-            padding: 13px 40px;
-            font-size: 36px;
-            width: 280px;
-        }
-
-    }
-
-}
-
-@media(min-width: $breakpoint-desktop) {
-    .section__header {
-        height: 100vh;
-        margin-bottom: 100px;
-        background-color: transparent;
-        background-image: url('../assets/Home-Hero-Image.jpg');
-        background-size: contain;
-        background-position: -500px;
-        background-repeat: no-repeat;
-
-
-        .header__main {
-            padding-top: 300px;
-            width: 60%;
-            justify-content: center;  
-            align-items: center;      
-            padding-right: 2rem;
-
-            .decoration__line {
-                margin:0;
-                align-self: center;
-            }  
-
-        }         
-    }       
+  }
 }
